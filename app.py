@@ -12,6 +12,45 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+
+.main {
+    background: linear-gradient(135deg, #f8f9ff, #eef2ff);
+}
+
+h1 {
+    color: #4f46e5;
+    font-size: 42px !important;
+    font-weight: 800;
+}
+
+h2, h3 {
+    color: #312e81;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-weight: 600;
+}
+
+.stButton > button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input {
+    border-radius: 10px;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.title("🛍️ AI Shopping Assistant")
 st.subheader("Personalized Recommendations for You")
 
